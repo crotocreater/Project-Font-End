@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+</head>
+<body>
+    <header class="font-serif text-gray-900 sticky top-0 z-50 bg-gray-50">
+        <nav class="grid grid-cols-4 py-6">
+            <div class="col-span-1 flex justify-center mt-3">
+                <h1 class="text-3xl uppercase font-bold hover:text-red-500 transition delay-100">villa</h1>
+            </div>
+            <div class="col-span-3 grid grid-cols-3">
+                <ul class="col-span-2 grid grid-cols-4 ml-20 text-end text-base mt-4 font-sans font-medium">
+                    <a href="" class="hover:text-red-500 transition delay-100"><li>Home</li></a>
+                    <a href="" class="hover:text-red-500 transition delay-100"><li>Properties</li></a>
+                    <a href=""  class="hover:text-red-500 transition delay-100"><li>Property Details</li></a>
+                    <a href=""  class="hover:text-red-500 transition delay-100"><li>Contact Us</li></a>
+                </ul>
+                <div class="col-span-1 flex justify-center items-center">
+                    <button class="btn">
+                    <div class="text-white bg-red-600 p-1 text-center rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+                      </svg>
+                    </div>
+                    <p class="hover:text-red-500 transition delay-100 text-center text-white"> Schedule a visit</p>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="bg-cover" style="background-image: url(./images/istockphoto-1496059399-1024x1024.jpg);" id="silde-1">
+            <div class="grid grid-cols-6 h-screen">
+                <button class="col-span-1 flex justify-center items-center font-bold hover:text-white text-gray-500 transition delay-300 " onclick="toLeft()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12 bg-gray-50 rounded-full m-2 hover:bg-gray-700">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>                      
+                </button>
+                <div class="col-span-4 flex flex-col justify-center gap-3 items-start">
+                    <div class="px-4 py-2 bg-white font-sans text-xl font-semibold inline-block">
+                        <span class="">Miami, </span>
+                        <span class="text-red-500">South Florida</span>
+                    </div>
+                    <div class="w-80 text-wrap text-5xl uppercase font-bold text-white px-2 py-3 leading-loose">
+                        act now! get the highest level penthouse
+                    </div>
+                </div>
+                <button class="col-span-1 flex justify-center items-center font-bold hover:text-white text-gray-500 transition delay-300 " onclick="toRight()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12 bg-gray-50 rounded-full m-2 hover:bg-gray-700">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>                                         
+                </button>
+            </div>
+            <div class="flex gap-2 justify-center">
+                <div class="w-4 h-4 border rounded-full border-gray-800 bg-red-600"></div>
+                <div class="w-4 h-4 border rounded-full border-gray-800 bg-red-50"></div>
+                <div class="w-4 h-4 border rounded-full border-gray-800 bg-red-50"></div>
+            </div>
+        </div>
+        <div class="bg-cover hidden" style="background-image: url(./images/villa-balbiano-6154200_1280.jpg);" id="silde-2">
+            <div class="grid grid-cols-6 h-screen">
+                <button class="col-span-1 flex justify-center items-center font-bold hover:text-white text-gray-500 transition delay-300 " onclick="toLeft()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12 bg-gray-50 rounded-full m-2 hover:bg-gray-700">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>                      
+                </button>
+                <div class="col-span-4 flex flex-col justify-center gap-3 items-start">
+                    <div class="px-4 py-2 bg-white font-sans text-xl font-semibold inline-block">
+                        <span class="">Melbourne, </span>
+                        <span class="text-red-500">Australia</span>
+                    </div>
+                    <div class="w-80 text-wrap text-5xl uppercase font-bold text-white px-2 py-3 leading-loose">
+                        eb quick! get the best villa in town
+                    </div>
+                </div>
+                <button class="col-span-1 flex justify-center items-center font-bold hover:text-white text-gray-500 transition delay-300 " onclick="toRight()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12 bg-gray-50 rounded-full m-2 hover:bg-gray-700">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>                                         
+                </button>
+            </div>
+            <div class="flex gap-2 justify-center">
+                <div class="w-4 h-4 border rounded-full border-gray-800 bg-red-50"></div>
+                <div class="w-4 h-4 border rounded-full border-gray-800 bg-red-600"></div>
+                <div class="w-4 h-4 border rounded-full border-gray-800 bg-red-50"></div>
+            </div>
+        </div>
+        <div class="bg-cover hidden" style="background-image: url(./images/villa-real-4638107_640.jpg);" id="silde-3">
+            <div class="grid grid-cols-6 h-screen">
+                <button class="col-span-1 flex justify-center items-center font-bold hover:text-white text-gray-500 transition delay-300 " onclick="toLeft()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12 bg-gray-50 rounded-full m-2 hover:bg-gray-700">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>                      
+                </button>
+                <div class="col-span-4 flex flex-col justify-center gap-3 items-start">
+                    <div class="px-4 py-2 bg-white font-sans text-xl font-semibold inline-block">
+                        <span class="">Toronto, </span>
+                        <span class="text-red-500">Canada</span>
+                    </div>
+                    <div class="w-80 text-wrap text-5xl uppercase font-bold text-white px-2 py-3 leading-loose">
+                        hurry! get the best villa for you
+                    </div>
+                </div>
+                <button class="col-span-1 flex justify-center items-center font-bold hover:text-white text-gray-500 transition delay-300 " onclick="toRight()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12 bg-gray-50 rounded-full m-2 hover:bg-gray-700">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>                                         
+                </button>
+            </div>
+            <div class="flex gap-2 justify-center">
+                <div class="w-4 h-4 border rounded-full border-gray-800 bg-red-50"></div>
+                <div class="w-4 h-4 border rounded-full border-gray-800 bg-red-50"></div>
+                <div class="w-4 h-4 border rounded-full border-gray-800 bg-red-600"></div>
+            </div>
+        </div>
+
+
+        <div class="py-40 grid grid-cols-4 gap-10 px-28">
+            <div class="col-span-1 w-[20vw] h-[70vh]">
+                <img class="w-full h-full rounded-lg" src="./images/interior-3804121_640.jpg" alt="">
+                <div class="w-[100px] h-[100px] rounded-full bg-red-500 relative left-[-3vw] bottom-[7vh] flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 mb-1 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                  </svg>
+                  </div>
+            </div>
+            <div class="col-span-2 px-4 font-sans overflow-hidden">
+                <h4 class="text-xl font-bold text-red-600 py-4">| FEATURED</h4>
+                <h2 class="text-wrap inline-block w-[30vw] font-bold text-5xl text-gray-800 py-10" >Best Appartment & Sea View</h2>
+                <div class="rounded border-b-[1px] border-gray-200 px-10 bg-gray-100 py-3 font-medium text-xl text-red-600  mr-10" onclick="ssSetting1()" id="btn-ss-1">Best useful links ?</div>
+                <div id="content-ss-1" class="text-wrap px-10 break-words bg-gray-100 mr-10">
+                    Get <span class="font-bold">the best villa</span> website template in HTML CSS and tailwindCss for your business. TemplateMo provides you <a href=""><span class="text-sky-600">best free CSS template</span></a> in the world. Please tell you frends about it.
+                </div>
+                <div class="rounded border-b-[1px] border-gray-200 px-10 bg-gray-100 py-3 font-medium text-xl text-gray-800 mr-10" onclick="ssSetting2()" id="btn-ss-2">How does this work ?</div>
+                <div id="content-ss-2" class="text-wrap px-10 break-words bg-gray-100 mr-10 hidden">
+                    Dolor <span class="font-bold">almesit amet</span>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <span class="font-light text-red-600">adipiscing </span>elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+                <div class="rounded border-b-[1px] border-gray-200 px-10 bg-gray-100 py-3 font-medium text-xl text-gray-800 mr-10" onclick="ssSetting3()" id="btn-ss-3">Why is Villa Agency the best ?</div>
+                <div id="content-ss-3" class="text-wrap px-10 break-words bg-gray-100 mr-10 hidden" > 
+                    Dolor <span class="font-bold">almesit amet</span>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <span class="font-light text-red-600">adipiscing </span>elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+            </div>
+            <div class="col-span-1 flex flex-col items-end justify-center rounded-lg shadow-2xl overflow-hidden py-5 px-4 ">
+                <div class="flex justify-center items-center w-full gap-3 border-b-[1px] border-gray-300 py-4 my-2">
+                    <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-14 text-red-600">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" />
+                    </svg>
+                    </div>
+                    <div class="flex flex-col mx-2">
+                        <span class="font-bold text-2xl">250 m2</span>
+                        <span class="font-thin text-sm">Total Flat Space</span>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center w-full gap-3 border-b-[1px] border-gray-300 py-4 my-2">
+                    <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-14 text-red-600">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+                      </svg>
+                    </div>
+                    <div class="flex flex-col mx-2">
+                        <span class="font-bold text-2xl">Contract</span>
+                        <span class="font-thin text-sm">Contract Ready</span>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center w-full gap-3 border-b-[1px] border-gray-300 py-4 my-2">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-14 text-red-600">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46" />
+                          </svg>                          
+                    </div>
+                    <div class="flex flex-col mx-2">
+                        <span class="font-bold text-2xl">Payment</span>
+                        <span class="font-thin text-sm">Payment Process</span>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center w-full gap-3 ">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-14 text-red-600">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z" />
+                          </svg>                          
+                    </div>
+                    <div class="flex flex-col mx-2">
+                        <span class="font-bold text-2xl">Safety</span>
+                        <span class="font-thin text-sm">24/7 Under Control</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="h-[120vh] my-20 pb-20">
+            <div class="h-1/2 blur-md"  style="background-image: url(./images/cypress-3951276_1280.jpg);"></div>
+            <div class="h-1/2 relative top-[-50vh] py-10 flex flex-col items-center gap-10">
+                <h3 class="font-sans font-semibold text-red-600 text-xl">| VIDEO VIEW</h3>
+                <h2 class="w-[30vw] text-wrap text-gray-50 text-5xl text-center font-bold">Get Closer View & Different Feeling</h2>
+                <div class="h-[60rem] w-[40rem] rounded-md bg-cover flex justify-center items-center" style="background-image: url(./images/istockphoto-1948074928-1024x1024.jpg) ;">
+                    <div class="p-2 bg-red-600 w-20 h-20 rounded-full relative top-[0] m-40 flex justify-center items-center">
+                        <div class="p-4 bg-white rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-8 text-red-600">
+                                <path fill-rule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd" />
+                              </svg>
+                              
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-3 gap-40 mt-20">
+                    <div class="flex gap-4 justify-center items-center bg-red-100 px-4 py-2 rounded-lg">
+                        <h3 class="font-bold text-3xl text-red-600">34</h3>
+                        <div class="w-32 text-wrap font-medium  text-xl text-center">Buildings Finished Now</div>
+                        <div class="w-10 h-10 rounded-full bg-red-600 relative top-[-4vh] right-[-4vh]"></div>
+                    </div>
+                    <div class="flex gap-4 justify-center items-center bg-red-100 px-4 py-2 rounded-lg">
+                        <h3 class="font-bold text-3xl text-red-600">12</h3>
+                        <div class="w-32 text-wrap font-medium  text-xl text-center">Years Experience</div>
+                        <div class="w-10 h-10 rounded-full bg-red-600 relative top-[-4vh] right-[-4vh]"></div>
+                    </div>
+                    <div class="flex gap-2 justify-center items-center bg-red-100 px-4 py-2 rounded-lg">
+                        <h3 class="font-bold text-3xl text-red-600">24</h3>
+                        <div class="w-32 text-wrap font-medium  text-xl text-center"> Awwards Won 2023</div>
+                        <div class="w-10 h-10 rounded-full bg-red-600 relative top-[-4vh] right-[-4vh]"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <div class="flex flex-col p-20 bg-gray-100">
+        <div class="flex justify-between ">
+            <div>
+                <h3 class="font-sans font-semibold text-red-600 text-xl">| BEST DEAL</h3>  
+                <h2 class="w-[30vw] py-10 text-5xl font-semibold text-wrap">Find Your Best Deal Right Now!</h2>
+            </div>
+            <div class="flex justify-end items-end gap-5 text-xl text-white">
+                <button id="btn-c-1" class="px-4 py-2 font-sans font-medium bg-red-500 rounded" onclick="slideCard(0, 'card1');">Appartment</button>
+                <button id="btn-c-2" class="px-4 py-2 font-sans font-medium bg-gray-800 rounded" onclick="slideCard(1, 'card2');">Villa house</button>
+                <button id="btn-c-3" class="px-4 py-2 font-sans font-medium bg-gray-800 rounded" onclick="slideCard(2, 'card3')">Penthouse</button>
+            </div>
+        </div>
+        <div class="ctn" id="card1">
+            <div class="ctn-card">
+                <div class="px-2 py-4 flex justify-between border-b-[1px] ">
+                    <p class="font-thin font-sans text-base text-gray-400">Total Flat Space</p>
+                    <p class="font-bold text-xl">185 m2</p>
+                </div>
+                <div class="px-2 py-4 flex justify-between border-b-[1px] ">
+                    <p class="font-thin font-sans text-base text-gray-400">Floor number</p>
+                    <p class="font-bold text-xl">26th</p>
+                </div>
+                <div class="px-2 py-4 flex justify-between border-b-[1px] ">
+                    <p class="font-thin font-sans text-base text-gray-400">Number of rooms</p>
+                    <p class="font-bold text-xl">4</p>
+                </div>
+                <div class="px-2 py-4 flex justify-between border-b-[1px] ">
+                    <p class="font-thin font-sans text-base text-gray-400">Parking Available</p>
+                    <p class="font-bold text-xl">Yes</p>
+                </div>
+                <div class="px-2 py-4 flex justify-between border-b-[0px] ">
+                    <p class="font-thin font-sans text-base text-gray-400">Payment Process</p>
+                    <p class="font-bold text-xl">Bank</p>
+                </div>
+            </div>
+            <div class="ctn-image">
+                <img class="rounded h-full" src="./images/deal-01 (1).jpg" alt="">
+            </div>
+            <div class="col-span-1 flex flex-col gap-2">
+                <p class="text-xl font-medium py-5">Extra Info About Property</p>
+                <div class="py-3 text-base text-wrap w-[20vw] flex flex-col gap-10">
+                    <div class="block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse.</div>
+                    
+                    <div class="block">When you need free CSS templates, you can simply type TemplateMo in any search engine website. In addition, you can type TemplateMo Portfolio, TemplateMo One Page Layouts, etc.</div>
+                </div>
+                <div class="col-span-1 flex justify-start items-center py-2">
+                    <button class="btn">
+                    <div class="text-white relative left-0 bg-red-600 p-1 text-center rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+                      </svg>
+                    </div>
+                    <p class="hover:text-red-500 transition delay-100 text-center text-white"> Schedule a visit</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="ctn hidden" id="card2">
+            <div class="ctn-card">
+                <div class="px-2 py-4 flex justify-between border-b-[1px] ">
+                    <p class="font-thin font-sans text-base text-gray-400">Total Flat Space</p>
+                    <p class="font-bold text-xl">250 m2</p>
+                </div>
+                <div class="px-2 py-4 flex justify-between border-b-[1px] ">
+                    <p class="font-thin font-sans text-base text-gray-400">Floor number</p>
+                    <p class="font-bold text-xl">26th</p>
+                </div>
+                <div class="px-2 py-4 flex justify-between border-b-[1px] ">
+                    <p class="font-thin font-sans text-base text-gray-400">Number of rooms</p>
+                    <p class="font-bold text-xl">5</p>
+                </div>
+                <div class="px-2 py-4 flex justify-between border-b-[1px] ">
+                    <p class="font-thin font-sans text-base text-gray-400">Parking Available</p>
+                    <p class="font-bold text-xl">Yes</p>
+                </div>
+                <div class="px-2 py-4 flex justify-between border-b-[0px] ">
+                    <p class="font-thin font-sans text-base text-gray-400">Payment Process</p>
+                    <p class="font-bold text-xl">Bank</p>
+                </div>
+            </div>
+            <div class="ctn-image">
+                <img class="rounded h-full" src="./images/deal-02.jpg" alt="">
+            </div>
+            <div class="col-span-1 flex flex-col gap-2">
+                <p class="text-xl font-medium py-5">Detail Info About Villa</p>
+                <div class="py-3 text-base text-wrap w-[20vw] flex flex-col gap-10">
+                    <div class="block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse.</div>
+                    
+                    <div class="block">When you need free CSS templates, you can simply type TemplateMo in any search engine website. In addition, you can type TemplateMo Portfolio, TemplateMo One Page Layouts, etc.</div>
+                </div>
+                <div class="col-span-1 flex justify-start items-center py-2">
+                    <button class="btn">
+                    <div class="text-white relative left-0 bg-red-600 p-1 text-center rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+                      </svg>
+                    </div>
+                    <p class="hover:text-red-500 transition delay-100 text-center text-white"> Schedule a visit</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="ctn hidden" id="card3">
+            <div class="ctn-card">
+                <div class="px-2 py-4 flex justify-between border-b-[1px] ">
+                    <p class="font-thin font-sans text-base text-gray-400">Total Flat Space</p>
+                    <p class="font-bold text-xl">320 m2</p>
+                </div>
+                <div class="px-2 py-4 flex justify-between border-b-[1px] ">
+                    <p class="font-thin font-sans text-base text-gray-400">Floor number</p>
+                    <p class="font-bold text-xl">34th</p>
+                </div>
+                <div class="px-2 py-4 flex justify-between border-b-[1px] ">
+                    <p class="font-thin font-sans text-base text-gray-400">Number of rooms</p>
+                    <p class="font-bold text-xl">6</p>
+                </div>
+                <div class="px-2 py-4 flex justify-between border-b-[1px] ">
+                    <p class="font-thin font-sans text-base text-gray-400">Parking Available</p>
+                    <p class="font-bold text-xl">Yes</p>
+                </div>
+                <div class="px-2 py-4 flex justify-between border-b-[0px] ">
+                    <p class="font-thin font-sans text-base text-gray-400">Payment Process</p>
+                    <p class="font-bold text-xl">Bank</p>
+                </div>
+            </div>
+            <div class="ctn-image">
+                <img class="rounded h-full" src="./images/deal-03.jpg" alt="">
+            </div>
+            <div class="col-span-1 flex flex-col gap-2">
+                <p class="text-xl font-medium py-5">Extra Info About Property</p>
+                <div class="py-3 text-base text-wrap w-[20vw] flex flex-col gap-10">
+                    <div class="block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse.</div>
+                    
+                    <div class="block">When you need free CSS templates, you can simply type TemplateMo in any search engine website. In addition, you can type TemplateMo Portfolio, TemplateMo One Page Layouts, etc.</div>
+                </div>
+                <div class="col-span-1 flex justify-start items-center py-2">
+                    <button class="btn">
+                    <div class="text-white relative left-0 bg-red-600 p-1 text-center rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+                      </svg>
+                    </div>
+                    <p class="hover:text-red-500 transition delay-100 text-center text-white"> Schedule a visit</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- card -->
+     <div class="flex flex-col gap-5 py-20">
+        <div class="flex flex-col gap-5 justify-center items-center pt-5 pb-10">
+            <h3 class="font-sans font-semibold text-red-600 text-xl">| PROPERTIES</h3>
+            <h2 class="w-[45vw] text-wrap text-gray-800 text-5xl text-center font-bold px-4">We Provide The Best Property You Like</h2>
+        </div>
+        <div class="px-20 grid grid-cols-3 gap-10">
+            <div class="p-5 bg-gray-50 shadow-sm rounded-lg flex flex-col gap-2">
+                <img class="rounded-lg w-full" src="./images/property-01.jpg" alt="">
+                <div class="border-b-[1px] flex flex-col gap-5 justify-between py-2">
+                    <div class="flex justify-between items-center my-2">
+                        <div class="px-4 py-1 text-base font-sans font-medium rounded bg-red-300">Luxury Villa</div>
+                        <div class="text-xl text-red-600 font-bold">$2.264.000</div>
+                    </div>
+                    <div class="block my-1 font-bold text-xl">18 New Street Miami, OR 97219</div>
+                    <div class="grid grid-cols-3 gap-1">
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Bedrooms:</span><span class="font-medium">8</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Bathrooms:</span><span class="font-medium">8</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Area:</span><span class="font-medium">545m2</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Floor:</span><span class="font-medium">3</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Parking:</span><span class="font-medium">6 spots</span></p>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center mt-4">
+                    <button class="rounded-full px-5 py-2 text-gray-50 font-medium bg-gray-800 hover:bg-red-500 transition delay-150">Schedule a visit</button>
+                </div>
+            </div>
+
+            <div class="p-5 bg-gray-50 shadow-sm rounded-lg flex flex-col gap-2">
+                <img class="rounded-lg w-full" src="./images/property-02.jpg" alt="">
+                <div class="border-b-[1px] flex flex-col gap-5 justify-between py-2">
+                    <div class="flex justify-between items-center my-2">
+                        <div class="px-4 py-1 text-base font-sans font-medium rounded bg-red-300">Luxury Villa</div>
+                        <div class="text-xl text-red-600 font-bold">$1.180.000</div>
+                    </div>
+                    <div class="block my-1 font-bold text-xl">54 Mid Street Florida, OR 27001</div>
+                    <div class="grid grid-cols-3 gap-1">
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Bedrooms:</span><span class="font-medium">6</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Bathrooms:</span><span class="font-medium">5</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Area:</span><span class="font-medium">450m2</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Floor:</span><span class="font-medium">3</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Parking:</span><span class="font-medium">8 spots</span></p>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center mt-4">
+                    <button class="rounded-full px-5 py-2 text-gray-50 font-medium bg-gray-800 hover:bg-red-500 transition delay-150">Schedule a visit</button>
+                </div>
+            </div>
+
+            <div class="p-5 bg-gray-50 shadow-sm rounded-lg flex flex-col gap-2">
+                <img class="rounded-lg w-full" src="./images/property-03.jpg" alt="">
+                <div class="border-b-[1px] flex flex-col gap-5 justify-between py-2">
+                    <div class="flex justify-between items-center my-2">
+                        <div class="px-4 py-1 text-base font-sans font-medium rounded bg-red-300">Luxury Villa</div>
+                        <div class="text-xl text-red-600 font-bold">$1.460.000</div>
+                    </div>
+                    <div class="block my-1 font-bold text-xl">26 Old Street Miami, OR 38540</div>
+                    <div class="grid grid-cols-3 gap-1">
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Bedrooms:</span><span class="font-medium">5</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Bathrooms:</span><span class="font-medium">4</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Area:</span><span class="font-medium">225m2</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Floor:</span><span class="font-medium">3</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Parking:</span><span class="font-medium">10 spots</span></p>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center mt-4">
+                    <button class="rounded-full px-5 py-2 text-gray-50 font-medium bg-gray-800 hover:bg-red-500 transition delay-150">Schedule a visit</button>
+                </div>
+            </div>
+            <div class="p-5 bg-gray-50 shadow-sm rounded-lg flex flex-col gap-2">
+                <img class="rounded-lg w-full" src="./images/property-04.jpg" alt="">
+                <div class="border-b-[1px] flex flex-col gap-5 justify-between py-2">
+                    <div class="flex justify-between items-center my-2">
+                        <div class="px-4 py-1 text-base font-sans font-medium rounded bg-red-300">Appartment</div>
+                        <div class="text-xl text-red-600 font-bold">$584.500</div>
+                    </div>
+                    <div class="block my-1 font-bold text-xl">12 New Street Miami, OR 12650</div>
+                    <div class="grid grid-cols-3 gap-1">
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Bedrooms:</span><span class="font-medium">4</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Bathrooms:</span><span class="font-medium">3</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Area:</span><span class="font-medium">125m2</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Floor:</span><span class="font-medium">25th</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Parking:</span><span class="font-medium">2 cars</span></p>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center mt-4">
+                    <button class="rounded-full px-5 py-2 text-gray-50 font-medium bg-gray-800 hover:bg-red-500 transition delay-150">Schedule a visit</button>
+                </div>
+            </div>
+
+            <div class="p-5 bg-gray-50 shadow-sm rounded-lg flex flex-col gap-2">
+                <img class="rounded-lg w-full" src="./images/property-05.jpg" alt="">
+                <div class="border-b-[1px] flex flex-col gap-5 justify-between py-2">
+                    <div class="flex justify-between items-center my-2">
+                        <div class="px-4 py-1 text-base font-sans font-medium rounded bg-red-300">Penthouse</div>
+                        <div class="text-xl text-red-600 font-bold">$925.600</div>
+                    </div>
+                    <div class="block my-1 font-bold text-xl">34 Beach Street Miami, OR 42680</div>
+                    <div class="grid grid-cols-3 gap-1">
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Bedrooms:</span><span class="font-medium">4</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Bathrooms:</span><span class="font-medium">4</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Area:</span><span class="font-medium">180m2</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Floor:</span><span class="font-medium">38th</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Parking:</span><span class="font-medium">2 cars</span></p>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center mt-4">
+                    <button class="rounded-full px-5 py-2 text-gray-50 font-medium bg-gray-800 hover:bg-red-500 transition delay-150">Schedule a visit</button>
+                </div>
+            </div>
+
+            <div class="p-5 bg-gray-50 shadow-sm rounded-lg flex flex-col gap-2">
+                <img class="rounded-lg w-full" src="./images/property-06.jpg" alt="">
+                <div class="border-b-[1px] flex flex-col gap-5 justify-between py-2">
+                    <div class="flex justify-between items-center my-2">
+                        <div class="px-4 py-1 text-base font-sans font-medium rounded bg-red-300">Modern Condo</div>
+                        <div class="text-xl text-red-600 font-bold">$450.000</div>
+                    </div>
+                    <div class="block my-1 font-bold text-xl">22 New Street Portland, OR 16540</div>
+                    <div class="grid grid-cols-3 gap-1">
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Bedrooms:</span><span class="font-medium">3</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Bathrooms:</span><span class="font-medium">2</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Area:</span><span class="font-medium">165m2</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Floor:</span><span class="font-medium">26th</span></p>
+                        <p class="text-base"><span class="font-medium pr-1 text-gray-500">Parking:</span><span class="font-medium">3 cars</span></p>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center mt-4">
+                    <button class="rounded-full px-5 py-2 text-gray-50 font-medium bg-gray-800 hover:bg-red-500 transition delay-150">Schedule a visit</button>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+
+
+    <!-- contract  -->
+    <div class="h-[150vh] my-20 pb-20 px-20">
+        <div class="h-1/2 blur-md"  style="background-image: url(./images/villa-franch-116375_960_720.jpg);"></div>
+        <div class="h-1/2 relative top-[-50vh] py-10 flex flex-col items-center gap-10">
+            <h3 class="font-sans font-bold text-red-600 text-xl">| CONTACT US</h3>
+            <h2 class="w-[30vw] text-wrap text-gray-50 text-5xl text-center font-bold">Get In Touch With Our Agents</h2>
+            <div class="grid grid-cols-2 gap-10">
+                <div class="col-span-1 flex justify-center items-center">
+                   <iframe class="rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14901.897863424867!2d105.84077260000001!3d20.973609749999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac570acdeded%3A0x8266c5435b0a5136!2zVHLGsOG7nW5nIHRp4buDdSBo4buNYyDEkOG6oWkgVOG7qw!5e0!3m2!1svi!2s!4v1724099847598!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-span-1 row-span-2 flex justify-center mx-10">
+                    <form class="rounded-lg bg-white w-3/4  shadow-lg px-5 py-12 flex flex-col justify-center gap-3" action="">
+                        <label class="px-4 font-medium text-base text-gray-700" for="name">Full Name</label>
+                        <input class="shadow-lg bg-gray-200 rounded-full p-2 px-5" type="text" name="" id="name" placeholder="Full Name ">
+                        <label class="px-4 font-medium text-base text-gray-700" for="email">Email Address</label>
+                        <input class="shadow-lg bg-gray-200 rounded-full p-2 px-5" type="email" name="" id="email" placeholder="Email Address">
+                        <label class="px-4 font-medium text-base text-gray-700" for="Subject">Subject</label>
+                        <input class="shadow-lg bg-gray-200 rounded-full p-2 px-5" type="text" name="" id="Subject" placeholder="Subject ">
+                        <label class="px-4 font-medium text-base text-gray-700" for="Message">Message</label>
+                        <textarea class="shadow-lg bg-gray-200 rounded-lg p-2 px-5 overflow-y-scroll overflow-x-auto" name="" id="" cols="10" rows="6" id="Message" placeholder="Message"></textarea>
+                        <div class="mt-2">
+                            <input type="submit" class="rounded-full px-5 py-2 text-gray-50 font-medium bg-gray-800 hover:bg-red-500 transition delay-150" name="" value="Send Message" id="">
+                        </div>
+                    </form>
+                </div>
+                <div class="grid grid-cols-2 gap-16">
+                    <div class="col-span-1 flex justify-center items-center shadow-lg py-2 px-4 gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12 text-red-600">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                          </svg>
+                        <div class="">
+                            <p class="font-semibold text-xl">010-020-0340</p>
+                            <p class="font-sans text-base text-gray-500">Phone Number</p>
+                        </div>
+                    </div>
+                    <div class="col-span-1 flex justify-center items-center shadow-lg py-2 px-4 gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12 text-red-600">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                          </svg>
+                          
+                        <div class="">
+                            <p class="font-semibold text-xl">info@villa.co</p>
+                            <p class="font-sans text-base text-gray-500">Business Email</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    </main>
+
+
+
+    <footer class="font-serif">
+        <div class="text-xl text-gray-100 bg-gray-900 text-center py-5">
+            <span class="block md:inline-block sm:text-wrap pb-5 md:pb-0 md:px-5">Copyright © 2048 Villa Agency Co., Ltd. All rights reserved. </span>
+            <span class="block md:inline-block">Design: TemplateMo</span>
+        </div>
+    </footer>
+    <script src="index.js"></script>    
+</body>
+</html>

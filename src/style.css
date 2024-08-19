@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+    @apply flex justify-center items-center text-end text-base mt-1 font-sans font-medium gap-2 bg-black rounded-full px-4 py-2;
+}
+
+
+.ctn{
+    @apply grid grid-cols-4 gap-10 font-sans py-20;
+}
+
+.ctn-image{
+    @apply col-span-2 flex justify-center items-center px-10;
+}
+
+.ctn-card {
+    @apply col-span-1 rounded-lg shadow-lg px-2 bg-white py-4 flex flex-col justify-center gap-2;
+}
+
