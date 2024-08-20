@@ -37,6 +37,10 @@ toRight = () => {
 };
 
 
+setInterval(() => {
+    toLeft();
+}, 2500);
+
 var btn = [
     document.querySelector("#btn-ss-1"),
     document.querySelector("#btn-ss-2"),
@@ -173,6 +177,45 @@ slideCard = (index, id) =>{
             if(cardContent[i].classList.contains("hidden")){
                 cardContent[i].classList.remove("hidden");
             }
+        }
+    }
+}
+
+
+
+var prCard = document.querySelectorAll(".cr");
+
+
+slideCardPr = (index, content)=>{
+    if(index == 0){
+        for(let i=0;i<prCard.length;i++){
+            if(prCard[i].classList.contains("hidden")){
+                prCard[i].classList.remove("hidden");
+            }
+        }
+    }
+    if(index != 0){
+        let sumHidden = 0;
+        for(let k=0;k<prCard.length;k++){
+            if(prCard[k].classList.contains("hidden")){
+                sumHidden++;
+            }
+        }
+        if(sumHidden > 4){
+            for(let i=0;i<prCard.length;i++){
+                if(prCard[i].classList.contains("hidden")){
+                    prCard[i].classList.remove("hidden");
+                }
+            }
+        }
+        let j = -1;
+        for(let i=0;i<index;i++){
+            let i = Math.floor(Math.random()*10);
+            j = i;
+            while(! (j!=i)){
+                i = Math.floor(Math.random*10);
+            }
+            prCard[i].classList.add("hidden");
         }
     }
 }

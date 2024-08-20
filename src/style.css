@@ -21,3 +21,17 @@
     @apply col-span-1 rounded-lg shadow-lg px-2 bg-white py-4 flex flex-col justify-center gap-2;
 }
 
+.bg-overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     /* Màu đen với độ trong suốt 50% */
+    z-index: 1;
+}
+.bg-overlay {
+    position: relative;
+    overflow: hidden;
+}
